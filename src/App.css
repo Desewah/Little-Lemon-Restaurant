@@ -1,38 +1,299 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&family=Markazi+Text:wght@400;500;600;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+}
+
+.logo {
+    display: block;
+    margin-right: 70px;
+
+}
+
+.nav_item {
+    padding: 20px;
+    display: block;
+    color: #495E57;
+    font-family: 'Markazi Text', serif;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.nav_item:focus {
+    color: #F4CE14;
+}
+
+.nav_item:hover {
+    color: #F4CE14;
+}
+
+
+
+.heroSection {
+    background-color: #495E57;
+    display: flex;
+    position: relative;
+    height: 406px;
+    width: 100%;
+}
+
+.hero1 {
+    margin-left: 400px;
+    margin-top: 29px;
+}
+
+.heroImage {
+    width: 375px;
+    height: 430px;
+    border-radius: 16px;
+    transform: translate(50%, 10%);
+    margin-left: 20px;
+}
+
+
+.heroHeading {
+    color: #F4CE14;
+    font-size: 40pt;
+    font-family: 'Karla', sans-serif;
+}
+
+.heroSubHeading {
+    color: #ffffff;
+    font-family: 'Karla', sans-serif;
+    font-size: 30pt;
+    font-weight: 300;
+}
+
+.heroParagraph {
+    color: #ffffff;
+    font-size: 17pt;
+    font-family: 100;
+    margin-top: 15px;
+    line-height: 30px;
+    font-family: 'Markazi Text', serif;
+    letter-spacing: 1.6px;
+}
+
+.CTA {
+    background-color: #F4CE14;
+    padding: 12px 30px;
+    border-radius: 18px;
+    border: none;
+    font-family: 'Markazi Text', serif;
+    letter-spacing: 1.6px;
+    font-size: 17pt;
+    font-weight: 600;
+    margin-top: 28px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.CTA:hover {
+    color: #495E57;
+}
+
+.highlightSection {
+    margin-top: 110px;
+}
+
+.sec1 {
+    margin-bottom: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.specials {
+    width: 270px;
+    height: 190px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.highlightHeading {
+    margin-right: 260px;
+    font-size: 40pt;
+    font-family: 'Karla', sans-serif;
+    color: #495E57;
+}
+
+.specialsDisplay {
+    margin-top: 100px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.specialFood {
+    margin: 30px;
+    width: 271px;
+    height: 460px;
+    background-color: #EDEFEE;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+}
+
+.bruschetta {
+    margin-top: -6px;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+}
+
+.lemonDessert {
+    margin-top: 0.1px;
+}
+
+.greekSalad {
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+}
+
+.food {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.foodDetails {
+    margin: 25px;
+}
+
+.foodName {
+    color: #495E57;
+}
+
+.foodName:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.foodPrice {
+    color: #EE9972;
+    font-size: 13pt;
+    margin-top: 5px;
+}
+
+.foodP {
+    margin-top: 25px;
+    font-family: 'Markazi Text', serif;
+    font-size: 14pt;
+    color: #495E57;
+}
+
+.lastBlock {
+    margin-top: 50px;
+    font-size: 12pt;
+}
+
+.deliveryIcon {
+    width: 17px;
+    height: 11px;
+    margin-right: 40px;
+    margin-top: 5px;
+}
+
+.salad {
+    margin-top: 30px;
+}
+
+/* reservation */
+
+.reservation {
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  fieldset {
+    display: flex;
+    width: 50vw;
+    background-color: white;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-direction: column;
+    box-shadow: 0px 0px 8px 5px #ccc;
+    font-family: 'Markazi Text', serif;
   }
-  to {
-    transform: rotate(360deg);
+  
+  label {
+    font-family: 'Karla', sans-serif;
+    margin-bottom: 8px;
+    font-size: 14px;
   }
-}
+  
+  sup {
+    color: red;
+    top: -2px;
+    font-size: 95%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  input,
+  select {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    height: 32px;
+    padding: 0 8px;
+  }
+  
+  .Field {
+    position: relative;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .FieldError {
+    position: absolute;
+    bottom: -6px;
+    color: red;
+    font-size: 12px;
+  }
+  
+  .Row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  button[type=submit] {
+    padding: 12px;
+    width: 240px;
+    border-radius: 4px;
+    border: none;
+    background-color: #F4CE14;
+    color: white;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:disabled,
+  button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+  }
