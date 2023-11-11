@@ -4,8 +4,9 @@ import bruschetta from "../assets/images/bruchetta.svg"
 import lemonDessert from "../assets/images/lemon dessert.jpg"
 import delivery from "../assets/images/Group.png"
 import '../App.css';
+import { About } from "./about";
 import {Main}  from "./BookingPage";
-import {Menu}  from "./Menu";
+import { Menu } from "./Menu";
 import {Link, Routes, Route} from "react-router-dom"
 
 
@@ -21,7 +22,7 @@ function HeroSection() {
                         Chicago
                     </h3>
                     <p className="heroParagraph">
-                    We are a family owned<br></br> Mediterranean restaurant,<br></br>focused on traditional<br></br> recipes served with a modern<br></br> twist.
+                    We are a family owned<br></br> Mediterranean restaurant, <br></br>focused on traditional<br></br> recipes served with a modern<br></br> twist.
                     </p>
                     <Link to="/reservation">
                         <button className="CTA">Reserve a Table</button>
@@ -43,7 +44,7 @@ function Highlights() {
     return (
         <>
             {/* Highlight Section */}
-            <section className="highlightSection">
+            <section className="highlightSection" id="menu">
                 <main className="sec1">
                     <h2 className="highlightHeading" >This weeks specials!</h2>
                     <Link to="/menu">
@@ -108,6 +109,7 @@ export function Home() {
         <>
             <HeroSection/>
             <Highlights/>
+            <About/>
         </>
     )
     

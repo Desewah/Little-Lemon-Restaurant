@@ -1,7 +1,7 @@
 export function About() {
     return (
-        <main>
-            Reserve here
+        <main id="about">
+            <h1>Reserve here</h1>
         </main>
     )
 }

@@ -1,7 +1,7 @@
 export function Menu() {
     return (
         <main>
-            Here is the menu
+            <h1>Reserve here</h1>
         </main>
     )
 }
