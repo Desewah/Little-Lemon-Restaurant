@@ -52,7 +52,7 @@ body {
 }
 
 .hero1 {
-    margin-left: 400px;
+    margin-left: 230px;
     margin-top: 29px;
 }
 
@@ -296,3 +296,45 @@ body {
     color: #666666;
     cursor: not-allowed;
   }
+
+
+.aboutSection {
+    background-color: #EDEFEE;
+    margin-top: 110px;
+    height: 579px;
+}
+
+.aboutImage {
+    width: 276px;
+    height: 330px;
+    border-radius: 16px;
+    margin-top: 45px;
+}
+
+.about1 {
+    margin-top: 80px;
+}
+
+.aboutP {
+    margin-top: 40px;
+    color: #495E57;
+}
+
+.imageContainer {
+    position: relative;
+    margin-left: 100px;
+}
+
+#mario {
+    position: absolute;
+    right: -220px;
+    margin-top: 60px;
+}
+
+#adrian {
+    margin-top: 180px;
+}
+
+.aboutSubHeading {
+    color: #495E57;
+}

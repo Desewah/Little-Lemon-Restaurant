@@ -3,7 +3,7 @@ import Logo from  "./assets/images/Vector.png";
 import {Link, Routes, Route} from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import {Main}  from "./components/BookingPage";
-import {Home, Footer} from "./components/Home"
+import {Home} from "./components/Home"
 import {ConfirmedBooking} from './components/confirmedBooking'
 
 function Nav() {
@@ -32,7 +32,6 @@ function App() {
     return (
         <>
             <Nav/>
-            <Footer/>
         </>
     );
 }

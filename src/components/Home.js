@@ -8,6 +8,9 @@ import { About } from "./about";
 import {Main}  from "./BookingPage";
 import { Menu } from "./Menu";
 import {Link, Routes, Route} from "react-router-dom"
+import footerLogo from "../assets/images/Asset 20@4x.png";
+import { HashLink } from "react-router-hash-link";
+import {ConfirmedBooking} from './confirmedBooking'
 
 
 function HeroSection() {
@@ -110,6 +113,7 @@ export function Home() {
             <HeroSection/>
             <Highlights/>
             <About/>
+            <Footer/>
         </>
     )
     
@@ -120,7 +124,46 @@ export function Footer() {
     return (
         <>
             <footer>
-                This is the Footer
+                <section className="">
+                    <main>
+                        <img 
+                            src={footerLogo}
+                            alt="little lemon logo"
+                            className="footerLogo"
+                        />
+                    </main>
+                    <main>
+                        <ul>
+                            <li>Doormat</li>
+                            <li>Navigation</li>
+                            <li><Link to="/" className="">Home</Link></li>
+                            <li><HashLink smooth to="/#about" className="">About</HashLink></li>
+                            <li><HashLink smooth to="/#menu" className="">Menu</HashLink></li>
+                            <li><Link to="/reservation" className="">Reservations</Link></li>
+                            <li><Link to="/order" className="">Order Online</Link></li>
+                            <li><Link to="/login" className="">Login</Link></li>
+                        </ul>
+                        <Routes>
+                            <Route path="/" element={<Home />}></Route>
+                            <Route path="/reservation" element={<Main />}></Route>
+                            <Route path="/confirmed-booking" element= {<ConfirmedBooking />}></Route>
+                        </Routes>
+                    </main>
+                    <main>
+                        <ul>
+                            <li>Contact</li>
+                            <li>Address</li>
+                            <li>Phone number</li>
+                            <li>emmail</li>
+                        </ul>
+                    </main>
+                    <main>
+                        <li>Social Media Links</li>
+                        <li>Address</li>
+                        <li>Phone number</li>
+                        <li>emmail</li>
+                    </main>
+                </section>
             </footer>
         </>
         
